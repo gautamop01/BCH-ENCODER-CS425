@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCH Encoding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center-container">
+        <h1>BCH Encoding</h1>
+        <label for="message">Enter the message as a binary string:</label>
+        <input type="text" id="message" placeholder="e.g., 1011">
+        <label for="nsym">Enter the number of parity symbols:</label>
+        <input type="number" id="nsym" min="1" value="1">
+        <label for="degree">Enter the degree of the irreducible polynomial:</label>
+        <input type="number" id="degree" min="1" value="4">
+        <button onclick="encodeMessage()">Encode Message</button>
+        <p id="result"></p>
+        <div id="contributors" class="contributors">
+            <p>Contributors:</p>
+            <ul>
+                <li>[Gautam Kumar Mahar]</li>
+                <li>[Swamini Prashant]</li>
+                <li>[Umar Sayad]</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
